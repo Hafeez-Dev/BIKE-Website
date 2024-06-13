@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike|Color Canging|Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="bike">
+        <nav>
+            <img src="images/logo.png">
+            <a href="#">Test Drive</a>
+        </nav>
+        <div class="content">
+            <h3  id="changeColor">THE BMW</h3>
+            <h1>G 310 R</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, eligendi. Beatae, obcaecati earum repellendus culpa nulla perferendis
+                illum libero maxime aperiam praesentium sed natus officia qui ad ipsa sequi! Incidunt!50.
+            </p>
+            <h4>Choose Your Colours</h4>
+        </div>
+        <div class="color-select">
+            <div id="red"></div>
+            <div id="blue"></div>
+            <div id="black"></div>
+        </div>
+    </div>
+
+<script>
+    let redBtn = document.getElementById("red");
+    let blueBtn = document.getElementById("blue");
+    let blackBtn = document.getElementById("black");
+    let bike = document.getElementById("bike");
+    let changeColor = document.getElementById("changeColor");
+
+    redBtn.onclick = function(){
+        bike.style.backgroundImage = "url(images/BMW1.png)";
+        changeColor.style.color = "red";
+    }
+    blueBtn.onclick = function(){
+        bike.style.backgroundImage = "url(images/BMW2.png)";
+        changeColor.style.color = "blue";
+    }
+    blackBtn.onclick = function(){
+        bike.style.backgroundImage = "url(images/BMW3.png)";
+        changeColor.style.color = "black";
+    };
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
